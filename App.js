@@ -3,11 +3,13 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
 import Searchscreen from './src/screens/Searchscreen'
+import Resultscreen from './src/screens/Resultscreen'
 
 const navigator= createStackNavigator(
 
   {
-    Search: Searchscreen
+    Search: Searchscreen,
+    Result: Resultscreen
   },
   {
     initialRouteName: 'Search',

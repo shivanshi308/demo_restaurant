@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
 
+
+//this component is to render every single elemnet inside the results array rendered by flatlist
 const ResultsDetail = ({ result }) => {
     return (
       <View style={styles.container}>
@@ -18,7 +20,7 @@ const ResultsDetail = ({ result }) => {
       marginLeft: 15
     },
     image: {
-      width: 250,
+      width: 200,
       height: 120,
       borderRadius: 4,
       marginBottom: 5

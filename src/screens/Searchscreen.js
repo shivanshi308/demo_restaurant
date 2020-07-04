@@ -29,19 +29,22 @@ const Searchscreen= ()=>{
                 onWordSubmit={()=>searchAPI(word)}
             />  
             {error ? <Text>{error}</Text> : null}
-            <Text>We found {results.length} results</Text>
+            
             <ScrollView>
             <Resultlist 
                 title="Cost effective"
-                results={filterByPrice('2')}
+                results={filterByPrice(2)}
+                
                 />
             <Resultlist 
                 title="Bit pricier"
-                results={filterByPrice('3')}
+                results={filterByPrice(3)}
+                
                 />
             <Resultlist
                 title="Big spender"
-                results={filterByPrice('4')}
+                results={filterByPrice(4)}
+                
                 />
             </ScrollView>
             
